@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-align: center;
+
+}
+
+.blank {
+    height: 20vh;
+}
+
+.header-logo {
+    margin: auto;
+    border: 3px solid rgb(255, 255, 255, .4);
+
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    margin-top: 3.5em;
+}
+
+.header-logo>img {
+    padding: 1.4em;
+
+}
+
+.score {
+    margin: 1.4em;
+    padding: .2em 2.6em;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: white;
+    color: hsl(229, 64%, 46%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score>p {
+    padding-top: 2px;
+    font-size: 1.2em;
+
+}
+
+.score>h1 {
+    color: hsl(229, 25%, 31%);
+    font-size: 4em;
+    padding: 0;
+}
+
+.game-body {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 7em;
+    position: relative;
+}
+
+.rps-icon {
+    position: absolute;
+    border-radius: 100%;
+    width: 24%;
+
+}
+
+.rps-icon-rock {
+    left: -22%;
+    top: -25%;
+    padding: 1.9em;
+    background-color: white;
+    border: 1.3em solid;
+    border-color: hsl(349, 70%, 56%);
+}
+
+.rps-icon-paper {
+    top: -25%;
+    left: 65%;
+    padding: 1.9em;
+    background-color: white;
+    border: 1.3em solid;
+    border-color: hsl(230, 89%, 65%);
+}
+
+.rps-icon-scissor {
+    top: 65%;
+    left: 22%;
+    padding: 1.9em;
+    background-color: white;
+    border: 1.3em solid;
+    border-color: hsl(40, 84%, 53%);
+}
+active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.s-clicked:active {
+    transition: all 0.1s ease-out;
+    color: hsl(39, 89%, 49%);
+    box-shadow: 6px 6px;
+
+
+}
+
+.r-clicked:active {
+    transition: all 0.1s ease-out; 
+    color: hsl(349, 71%, 52%);
+    box-shadow: 6px 6px;
+
+}
+
+.p-clicked:active {
+    transition: all 0.1s ease-out; 
+    color: hsl(230, 89%, 62%);
+    box-shadow: 6px 6px;
+
+}
+.js{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    color: white;
+    height: 35vh;
+}
+.left-js{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.right-js{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.right-js > p > img{
+    width: 8%;
+    margin-left: 88%;
+    margin-top: 10%;
+}
+.left-js > p > img{
+    width: 8%;
+    margin-top: 10%;
+    margin-left: 38%;
+}
+.win-lose{
+    position: absolute;
+    left: 48%;
+    padding-top: 8em;
+}
+.left-js > p{
+    font-size: 1.3em;
+}
+.right-js > p{
+    font-size: 1.3em;
+}
+.btn{
+    padding: 1em 2.5em;
+    margin: 5px;
+    color: hsl(349, 71%, 52%);
+    font-weight: bold;
+    border-radius: 1em;
+    
+}
